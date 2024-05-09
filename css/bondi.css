@@ -1,0 +1,163 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33c1dd;
+    --yellow-color: #ffc400;
+    --red-color: #ff3150;
+    --section-color: #eff7fa;
+}
+body {
+    font-family: "Roboto", sans-serif; 
+}
+.navbar {
+    background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--green-color);
+}
+.navbar .search {
+    border-left:  1px solid var(--green-color);
+}
+.navbar .search svg {
+    color: var(--green-color);
+}
+.navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar .navbar-toggler [aria-expanded="true"] {
+    border-color: var(--green-color);
+}
+.main-btn {
+    color: var(--yellow-color);
+    background-color: var(--red-color);
+    padding: 0.5rem 1rem;
+}
+.main-btn:hover {
+    color: white;
+    background-color: var(--red-color);
+}
+.landing {
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 72px);
+}
+.main-title::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.future .icon-holder {
+    height: 200px;
+}
+.future .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.future .icon-holder .number {
+    font-size: 12rem;
+    color: var(--section-color);
+}
+.future .icon-holder .icon {
+    color: var(--green-color);
+}
+.future h4 {
+    color: var(--yellow-color);
+}
+.our-work {
+    background-color: var(--section-color);
+}
+.our-work ul .active {
+    color: var(--yellow-color);
+    background-color: var(--red-color);
+}
+.our-work ul li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.our-work ul li:hover:not(:first-child) {
+    color: var(--red-color);
+}
+.our-work .box::before {
+    content: attr(data-work);
+    position: absolute;
+    background-color: rgba(0, 128, 0, 0.308);
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: 0.5s;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 8px));
+}
+.our-work .box:hover::before {
+    transform: translateX(0);
+}
+.stuff .description {
+    max-width: 500px;
+}
+.team {
+    background-color: var(--section-color);
+}
+.team h2 {
+    color: var(--yellow-color);
+}
+.team .box h4 {
+    background-color: var(--green-color);
+}
+.project {
+    background-color: var(--dark-color);
+}
+.subscribe {
+    background-color: var(--yellow-color);
+}
+.subscribe .Email:focus {
+    outline: none;
+}
+.subscribe ::placeholder {
+    color: white;
+}
+.subscribe .btn {
+    color: var(--yellow-color);
+    background-color: var(--dark-color);
+}
+.footer {
+    background-color: var(--dark-color);
+}
+.copyright span {
+    color: var(--green-color);
+}
+.year span {
+    color: var(--yellow-color);
+}
+.footer .contact svg {
+    width: 30px;
+    height: 30px;
+}
+.footer .contact .facebook {
+    background-color: #1877f2;
+}
+.footer .contact .twitter {
+    background-color: #1da1f2;
+}
+.footer .contact .linkedin {
+    background-color: #0a66c2;
+}
+.footer .contact .youtube {
+    background-color: #ff0000;
+}
